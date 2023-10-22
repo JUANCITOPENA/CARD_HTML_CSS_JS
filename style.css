@@ -153,7 +153,7 @@ h3:hover{color: #0c1e03;
 /* Media query para pantallas pequeñas (máximo 768px de ancho) */
 @media (max-width: 768px) {
   .container {
-    width: 80%; /* Reducir el ancho del contenedor */
+    width: 90%; /* Reducir el ancho del contenedor */
   }
 
   h1 {
@@ -161,8 +161,8 @@ h3:hover{color: #0c1e03;
   }
 
   .foto {
-    width: 120px; /* Reducir el tamaño de la imagen de perfil */
-    height: 120px;
+    width: 130px; /* Reducir el tamaño de la imagen de perfil */
+    height: 130px;
   }
 
   p {
