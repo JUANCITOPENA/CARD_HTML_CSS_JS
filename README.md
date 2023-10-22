@@ -51,4 +51,3 @@ Este proyecto se encuentra bajo la Licencia MIT. Puedes consultar el archivo LIC
 
 ## ¡Diviértete codificando! 🚀
 
-Asegúrate de personalizar el enlace del repositorio (`https://tu-repositorio.git`) y la imagen de captura de pantalla (`screenshot.png`) según tus necesidades. Luego, simplemente copia y pega este contenido en tu archivo `README.md` en tu repositorio de GitHub.
