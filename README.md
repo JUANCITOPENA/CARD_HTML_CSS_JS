@@ -24,7 +24,6 @@ Este es un proyecto básico diseñado para ayudar a los principiantes a aprender
 
 1. **Clona este repositorio en tu máquina local:**
 
-```bash
 git clone https://tu-repositorio.git
 
 ## Abre el proyecto en tu editor de código favorito.
