@@ -1,6 +1,6 @@
 # Proyecto de Aprendizaje de HTML, CSS y JavaScript
 
-![Proyecto de Aprendizaje](screenshot.png)
+![Proyecto de Aprendizaje](card.png)
 
 ## Descripción
 
