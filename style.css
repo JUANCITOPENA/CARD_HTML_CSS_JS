@@ -1,0 +1,187 @@
+/* 
+  Reglas de CSS para Maquetar una Pagina Basica con Estructura HTML5 y CSS
+  Creado por: Ing. Juancito Peña
+  Primera Regla Marenes 0 a todo el Body y su contenido, iniciamos en cero todo
+
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Segunda Regla para el Body */
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(254, 248, 248);
+}
+/* Tercera Regla para el container */
+.container{
+    margin-top: 30px;
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(108, 118, 226, 0.5);
+    padding-bottom: 25px;
+}
+/* Cuarta Regla para el H1 */
+h1 {
+  padding-bottom: 25px;
+  font-size: 2.5em; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+  color: #007BFF; /* Color del texto */
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 3px 3px 3px #000; /* Sombra de texto 3D */
+  animation: textAnimation 4s linear infinite; /* Animación */
+}
+/* Animacion: */
+@keyframes textAnimation {
+  0% {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 3px 3px 3px #000;
+  }
+  50% {
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, 5px 5px 5px #000;
+  }
+  100% {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 3px 3px 3px #000;
+  }
+}
+
+/* Quinta Regla para el h2 */
+h2{
+    color: blue;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+h3{color: #192a56;
+  background-color: #ade8f0;
+  padding: 10px;
+  border-radius: 15px;
+}
+h3:hover{color: #0c1e03;
+  background-color:  #74e80fe3;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/*  Regla para foto */
+
+.foto{
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+    border: 5px solid rgb(202, 202, 212);
+    border-radius: 100%;
+     /* Animación de latido de corazón */
+  animation: heartbeat 1s infinite alternate ease-in-out;
+  }
+  @keyframes heartbeat {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+
+  /*  Regla para foto */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+  }
+  
+  .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Para colocar el tooltip arriba del elemento */
+    left: 50%;
+    margin-left: -80px; /* Alinea el tooltip en el centro */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
+
+  p{
+    text-align: justify;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .redesociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .redesociales a{
+    text-decoration: none;
+    margin: 10px;
+  }
+
+  .redesociales i{
+    font-size: 36px;
+    color: #333; 
+
+  }
+
+  .redesociales i:hover{
+    color: rgb(21, 41, 194);
+  }
+
+/* Media query para pantallas pequeñas (máximo 768px de ancho) */
+@media (max-width: 768px) {
+  .container {
+    width: 80%; /* Reducir el ancho del contenedor */
+  }
+
+  h1 {
+    font-size: 2em; /* Reducir el tamaño del texto del encabezado h1 */
+  }
+
+  .foto {
+    width: 120px; /* Reducir el tamaño de la imagen de perfil */
+    height: 120px;
+  }
+
+  p {
+    font-size: 18px; /* Reducir el tamaño del texto del párrafo */
+  }
+
+  .redesociales {
+    display: flex;
+    justify-content: space-around; /* Opcional: ajusta el espaciado entre los íconos */
+  }
+  .redesociales i{
+    font-size: 25px;
+    color: #333; 
+
+  }
+
+  .redesociales a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin: 0 5px; /* Espaciado entre los íconos */
+  }
+
+}
