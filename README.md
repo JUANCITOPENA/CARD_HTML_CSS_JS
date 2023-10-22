@@ -28,7 +28,7 @@ https://juancitopena.github.io/CARD_HTML_CSS_JS/
 
 1. **Clona este repositorio en tu máquina local:**
 
-git clone https://tu-repositorio.git
+git clone [https://github.com/JUANCITOPENA/CARD_HTML_CSS_JS.git]
 
 ## Abre el proyecto en tu editor de código favorito.
 
